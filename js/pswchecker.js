@@ -1,6 +1,6 @@
 function checkPswd() {
 
-    var ans1 = "Little Blue Penguin";
+    var ans1 = "Little Penguin";
     var ans2 = "Adolf Hilder";
     var ans3 = "No";
 
