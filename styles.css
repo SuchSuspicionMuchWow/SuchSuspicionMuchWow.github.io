@@ -1,0 +1,120 @@
+* {
+    /* height: 100vh; */
+    overflow: hidden;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body {
+    width: 100vw;
+    background-color: #0A0A0A !important;
+    background-size: cover;
+}
+
+.main-bg {
+    margin: auto;
+}
+h4 {
+    color: #f2c693;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 20px;
+}
+p {
+    margin-top: -45px;
+    color: #f2c693;
+}
+label {
+    color: #f2c693;
+}
+a {
+    color: #ffffff !important;
+}
+.outer {
+    position: absolute;
+    padding: 70px;
+    width: 60%;
+    height: 65%;
+}
+.inner {
+    position: relative;
+    width: 62%;
+    height: 65%;
+}
+.peng-img {
+    width: 20%;
+    height: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.hidden {
+    display: none;
+    opacity: 0;
+}
+.show {
+    display: block;
+}
+#emitter {
+  visibility: hidden;
+  background-color: #222;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 40%;
+  left: 0%;
+}
+.dot-container {
+  position:absolute;
+  left:0;
+  top:0;
+  overflow:visible;
+  z-index:5000;
+  pointer-events:none;
+}
+.dot {
+  position: absolute;
+  pointer-events: none; /*performance optimization*/
+}
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 4s;
+}
+.rotate {
+    transform-origin: 50% 50%;
+    -webkit-animation:spin 120s linear infinite;
+    -moz-animation:spin 120s linear infinite;
+    animation:spin 120s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@media only screen and (max-width: 780px) {
+    .invite-text {
+        font-size: 14px !important;
+        
+    }
+    b {
+        margin-bottom: 20px;
+    }
+    .outer {
+        width: 80%;
+        padding: 39px;
+    }
+    .inner {
+    position: relative;
+    width: 85%;
+    height: 65%;
+
+    }
+}
